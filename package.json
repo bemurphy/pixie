@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "nano": "~4.6.1",
+    "express": "~3.4.8",
+    "underscore": "~1.6.0"
+  }
+}
