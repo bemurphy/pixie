@@ -22,7 +22,7 @@ module.exports = function(config) {
 
     var hit = {
       pixie: req.params[0],
-      ip: req.connection.remoteAddress,
+      ip: req.ip,
       url: req.url,
       referer: referer,
       time: new Date().getTime()
