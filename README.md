@@ -13,7 +13,8 @@ new Pixie({
 
   dbName: 'pixies',
 
-  // How often to bulk write hit documents
+  // How often to bulk write hit documents.  At 60 and a single thread,
+  // you max out writing about 43k/mo which is lower than free thresholds
   writeIntervalSeconds: 60,
 
   // A function that receives an expess req and returns a
