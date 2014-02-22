@@ -1,6 +1,7 @@
 var _ = require('underscore');
 var express = require('express');
 var app = express();
+app.enable('trust proxy');
 var nano = require('nano');
 
 // 1px transparent gif
