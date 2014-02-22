@@ -1,7 +1,16 @@
 {
+  "name" : "pixie",
+  "version" : "0.0.1",
+  "description" : "lightweight image pixel tracking using CouchDB",
+  "main": "index.js",
   "dependencies": {
     "nano": "~4.6.1",
     "express": "~3.4.8",
     "underscore": "~1.6.0"
-  }
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/bemurphy/pixie.git"
+  },
+  "license": "MIT"
 }
