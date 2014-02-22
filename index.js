@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 app.enable('trust proxy');
 var nano = require('nano');
+var url = require('url');
 
 // 1px transparent gif
 var b64string = 'R0lGODlhAQABAAAAACw=';
@@ -20,12 +21,14 @@ module.exports = function(config) {
 
   app.get('/pixie-([a-zA-Z0-9]+).gif', function(req, res){
     var referer = req.get('Referer');
+    var refHostname = url.parse(referer + '').hostname;
 
     var hit = {
       pixie: req.params[0],
       ip: req.ip,
       url: req.url,
       referer: referer,
+      ref_hostname: refHostname,
       time: new Date().getTime()
     };
 
