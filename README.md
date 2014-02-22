@@ -38,7 +38,8 @@ embed a tracking pixel in a webpage:
 ```
 
 You'll end up with a hit doc in Cloudant that contains the `pixie` id (in this case 'example'),
-the remote client ip, the referer, url, a numeric js timestamp, and your custom params:
+the remote client ip, the referer, referer hostname, url, a numeric js timestamp, and your
+custom params:
 
 ``` json
 {
@@ -48,6 +49,7 @@ the remote client ip, the referer, url, a numeric js timestamp, and your custom 
   "ip": "1.2.3.4",
   "url": "/pixie-example.gif?build_id=42&uid=971",
   "referer": "http://example.com/sales",
+  "ref_hostname": "example.com",
   "time": 1393101312716,
   "source": {
     "build_id": "42",
