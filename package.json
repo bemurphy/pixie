@@ -1,6 +1,6 @@
 {
   "name" : "pixie",
-  "version" : "0.0.1",
+  "version" : "0.0.2",
   "description" : "lightweight image pixel tracking using CouchDB",
   "main": "index.js",
   "dependencies": {
